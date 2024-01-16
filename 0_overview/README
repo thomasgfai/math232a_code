@@ -1,4 +1,4 @@
-Brandeis Math 162a: Code Examples
+Brandeis Math 232a: Code Examples
 Unit 0: Overview of Scientific Computing 
 ========================================
 acc_test.py - a program to test the value of machine epsilon, by comparing
