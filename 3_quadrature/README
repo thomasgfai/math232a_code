@@ -1,0 +1,9 @@
+Brandeis Math 232a: Code Examples
+Unit 3: Quadrature
+==========================
+quadrat.py - Integrates a function using composite trapezoid and Simpson's
+rules. Outputs the error as a function of the interval length h. 
+
+series_and_pade.nb - Mathematica notebook illustrating symbolic computations and Pade approximants
+
+approx_driver.m - computes I(\epsilon) = \int_0^1 dx/(\epsilon+x^2) and compares \sqrt{\epsilon}I(\epsilon) to \pi/2
