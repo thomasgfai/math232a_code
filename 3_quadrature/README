@@ -4,6 +4,11 @@ Unit 3: Quadrature
 quadrat.py - Integrates a function using composite trapezoid and Simpson's
 rules. Outputs the error as a function of the interval length h. 
 
+Given data stored in the file "out", in Gnuplot the results can be shown with the command:
+
+set logscale xy
+plot 'out' u 2:3 t 'Trapezoidal' ps 2, 'out' u 2:4 t 'Simpson' ps 2
+
 series_and_pade.nb - Mathematica notebook illustrating symbolic computations and Pade approximants
 
 approx_driver.m - computes I(\epsilon) = \int_0^1 dx/(\epsilon+x^2) and compares \sqrt{\epsilon}I(\epsilon) to \pi/2
