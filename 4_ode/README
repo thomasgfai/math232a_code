@@ -1,0 +1,38 @@
+Brandeis Math 232a: Code Examples
+Unit 4: Numerical Ordinary Differential Equations
+==========================
+euler.py - Demonstrates the simple first-order forward Euler method for
+integrating an ordinary differential equation. If the program is run with "python euler.py >out" so that the data is sent to a file called "out", then within Gnuplot the results can be shown with the command:
+
+plot 'out' u 1:2 t 'Computed solution', 'out' u 1:3 t 'Exact solution'
+
+The differences between the two can be shown with the command:
+
+plot 'out' u 1:4 t 'Error'
+
+e_stab.py - Tests the stability of the choice of timestep in the forward Euler method
+
+order2.py - Demonstrates three different second-order time-integration
+schemes: the explicit midpoint method, the explicit trapezoidal method, and Ralston's method. After running "python order2.py >out" the relative convergence rates can be shown with the following commands in gnuplot.
+
+set logscale xy
+plot 'out' u 1:abs(6) t 'Error1', 'out' u 1:abs(7) t 'Error2', 'out' u 1:abs(8) t 'Error3'
+
+stiff.py - Solves a two-component differential equation that has one stiff
+mode. It uses an explict scheme and an implicit scheme. The explicit scheme
+has a very strict timestep restriction, while the implicit scheme is
+unconditionally stable.
+
+stiff2.py - Demonstrates using Python's black-box stiff solver for the
+same two-component differential equation from stiff.py.
+
+ad-bash.py - Solves a differential equation using a second-order
+Adams-Bashforth multi-step scheme.
+
+diff.py - Constructs a differentiation matrix, and uses it to calculate the
+derivative of a test function.
+
+ode_bvp.py - Solves an ODE boundary value problem by formulating it as a
+linear system using finite differences.
+
+ode_asymp.py - Compares full numerical solution to asymptotic solutions obtained using dominant balance. 
