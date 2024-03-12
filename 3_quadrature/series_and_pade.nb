@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27142,        679]
-NotebookOptionsPosition[     22810,        623]
-NotebookOutlinePosition[     23148,        638]
-CellTagsIndexPosition[     23105,        635]
+NotebookDataLength[     34734,        873]
+NotebookOptionsPosition[     30282,        816]
+NotebookOutlinePosition[     30678,        832]
+CellTagsIndexPosition[     30635,        829]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,446 +21,592 @@ Notebook[{
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"f", "[", "x_", "]"}], ":=", 
-   RowBox[{"1", "/", 
-    RowBox[{"(", 
-     RowBox[{"1", "+", 
-      SuperscriptBox["x", "2"]}], ")"}]}]}], ";"}]], "Input",
- CellChangeTimes->{{3.792406198829398*^9, 3.792406219472497*^9}, {
-  3.792406260411366*^9, 3.792406267078093*^9}},
- CellLabel->"In[50]:=",ExpressionUUID->"6cf7a4b8-390a-4ece-8999-24e46f22f251"],
-
-Cell[BoxData[
- RowBox[{"Normal", "[", 
-  RowBox[{"Series", "[", 
    RowBox[{
-    RowBox[{"f", "[", "x", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0", ",", "5"}], "}"}]}], "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.792406338354664*^9, 3.792406341384316*^9}},
- CellLabel->"In[51]:=",ExpressionUUID->"f5217d2f-3f29-4d71-9e3c-48249746968f"],
+    RowBox[{"f", "[", "x_", "]"}], ":=", 
+    RowBox[{"1", "/", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       SuperscriptBox["x", "2"]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792406198829398*^9, 3.792406219472497*^9}, {
+  3.792406260411366*^9, 3.792406267078093*^9}, {3.919244729714097*^9, 
+  3.919244730355083*^9}},ExpressionUUID->"6cf7a4b8-390a-4ece-8999-\
+24e46f22f251"],
 
 Cell[BoxData[
- RowBox[{"taylorSeries", "=", 
+ RowBox[{
   RowBox[{"Normal", "[", 
    RowBox[{"Series", "[", 
     RowBox[{
      RowBox[{"f", "[", "x", "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}]], "Input",
+      RowBox[{"x", ",", "0", ",", "5"}], "}"}]}], "]"}], "]"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792406338354664*^9, 3.792406341384316*^9}, {
+  3.919244731684305*^9, 
+  3.919244732302527*^9}},ExpressionUUID->"f5217d2f-3f29-4d71-9e3c-\
+48249746968f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"taylorSeries", "=", 
+   RowBox[{"Normal", "[", 
+    RowBox[{"Series", "[", 
+     RowBox[{
+      RowBox[{"f", "[", "x", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{
   3.792406354009967*^9, {3.792406439143445*^9, 3.7924064583861113`*^9}, 
-   3.792406627612558*^9, {3.792406662108004*^9, 3.792406691788555*^9}},
- CellLabel->"In[52]:=",ExpressionUUID->"6082b6f5-3b51-42b2-99ba-7ef2d0d88c9b"],
+   3.792406627612558*^9, {3.792406662108004*^9, 3.792406691788555*^9}, {
+   3.919244733868936*^9, 
+   3.919244734512353*^9}},ExpressionUUID->"6082b6f5-3b51-42b2-99ba-\
+7ef2d0d88c9b"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"f", "[", "x_", "]"}], ":=", 
-   SqrtBox[
-    RowBox[{"1", "+", "x"}]]}], ";"}]], "Input",
- CellChangeTimes->{{3.7924064018360863`*^9, 3.792406416813437*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"de1fed0e-0a8e-4497-bf50-2213fb1e5730"],
+   RowBox[{
+    RowBox[{"f", "[", "x_", "]"}], ":=", 
+    SqrtBox[
+     RowBox[{"1", "+", "x"}]]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7924064018360863`*^9, 3.792406416813437*^9}, {
+  3.919244736625476*^9, 
+  3.919244737610875*^9}},ExpressionUUID->"de1fed0e-0a8e-4497-bf50-\
+2213fb1e5730"],
 
 Cell[BoxData[
- RowBox[{"taylorSeries", "=", 
-  RowBox[{"Normal", "[", 
-   RowBox[{"Series", "[", 
-    RowBox[{
-     RowBox[{"f", "[", "x", "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}]], "Input",
- CellLabel->"In[54]:=",ExpressionUUID->"7acb9f32-6948-4756-b728-950a8b7af48e"],
+ RowBox[{
+  RowBox[{"taylorSeries", "=", 
+   RowBox[{"Normal", "[", 
+    RowBox[{"Series", "[", 
+     RowBox[{
+      RowBox[{"f", "[", "x", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.919244738804407*^9, 
+  3.919244739447034*^9}},ExpressionUUID->"7acb9f32-6948-4756-b728-\
+950a8b7af48e"],
 
 Cell[BoxData[
- RowBox[{"Table", "[", 
-  RowBox[{
-   RowBox[{"SeriesCoefficient", "[", 
-    RowBox[{
-     RowBox[{"Series", "[", 
-      RowBox[{
-       RowBox[{"f", "[", "x", "]"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], ",", "n"}], "]"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "0", ",", "4"}], "}"}]}], "]"}]], "Input",
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"SeriesCoefficient", "[", 
+     RowBox[{
+      RowBox[{"Series", "[", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], ",", "n"}], "]"}],
+     ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "4"}], "}"}]}], "]"}], "\[IndentingNewLine]",
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.7924070593395367`*^9, 3.792407059523464*^9}, {
-   3.792407182756927*^9, 3.792407267365168*^9}, 3.792407545505661*^9},
- CellLabel->"In[55]:=",ExpressionUUID->"b7b214cd-f18c-4b68-a2da-12125f7e48bc"],
+   3.792407182756927*^9, 3.792407267365168*^9}, 3.792407545505661*^9, {
+   3.919244740825281*^9, 
+   3.919244741430299*^9}},ExpressionUUID->"b7b214cd-f18c-4b68-a2da-\
+12125f7e48bc"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"a", "[", "n_", "]"}], "=", 
-   RowBox[{"SeriesCoefficient", "[", 
-    RowBox[{
-     RowBox[{"Series", "[", 
-      RowBox[{
-       RowBox[{"f", "[", "x", "]"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"x", ",", "0", ",", "100"}], "}"}]}], "]"}], ",", "n"}], 
-    "]"}]}], ";"}]], "Input",
+   RowBox[{
+    RowBox[{"a", "[", "n_", "]"}], "=", 
+    RowBox[{"SeriesCoefficient", "[", 
+     RowBox[{
+      RowBox[{"Series", "[", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "100"}], "}"}]}], "]"}], ",", "n"}], 
+     "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.792407546715604*^9, 3.792407577300103*^9}, 
    3.792407651882092*^9, {3.792407738429153*^9, 3.792407775818426*^9}, {
    3.792407830261363*^9, 3.792407830687999*^9}, {3.792417795983526*^9, 
-   3.792417799700562*^9}},
- CellLabel->"In[56]:=",ExpressionUUID->"5ce8816c-1af8-407e-a5e6-f920295318b3"],
-
-Cell[BoxData[
- RowBox[{"SeriesTable", "=", 
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{"a", "[", "n", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"n", ",", "0", ",", "20"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792407858760491*^9, 3.792407869938596*^9}},
- CellLabel->"In[57]:=",ExpressionUUID->"9f10492c-bc44-48ab-aaee-f3c8ddf73748"],
-
-Cell[BoxData[
- RowBox[{"RatioTable", "=", 
-  RowBox[{"N", "[", 
-   RowBox[{"Table", "[", 
-    RowBox[{
-     RowBox[{"Abs", "[", 
-      RowBox[{
-       RowBox[{"a", "[", "n", "]"}], "/", 
-       RowBox[{"a", "[", 
-        RowBox[{"n", "+", "1"}], "]"}]}], "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"n", ",", "0", ",", "99"}], "}"}]}], "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792417665796492*^9, 3.792417685824278*^9}, {
-  3.7924177415879393`*^9, 3.79241774416816*^9}, {3.792417821664628*^9, 
-  3.792417821755336*^9}},
- CellLabel->"In[58]:=",ExpressionUUID->"8bd99e6b-d536-420c-803c-5dbfbd356120"],
-
-Cell[BoxData[
- RowBox[{"RatioTable", "=", 
-  RowBox[{"N", "[", 
-   RowBox[{"Table", "[", 
-    RowBox[{
-     SuperscriptBox[
-      RowBox[{"Abs", "[", 
-       RowBox[{"1", "/", 
-        RowBox[{"a", "[", "n", "]"}]}], "]"}], 
-      RowBox[{"1", "/", "n"}]], ",", 
-     RowBox[{"{", 
-      RowBox[{"n", ",", "1", ",", "100"}], "}"}]}], "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792417708895515*^9, 3.7924177513765917`*^9}, {
-  3.792417812570382*^9, 3.7924178128232203`*^9}},
- CellLabel->"In[59]:=",ExpressionUUID->"ba34a775-27f3-4f0e-afd6-0cbf965fe7db"],
-
-Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "taylorSeries", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792417902195917*^9, 3.792417902205304*^9}},
- CellLabel->"In[60]:=",ExpressionUUID->"ce233839-d708-4c8e-b935-cbfa92ad74f7"],
-
-Cell[BoxData[
- RowBox[{"taylorComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", 
-      RowBox[{
-       RowBox[{"-", "1"}], "/", "2"}], ",", "2"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{"\"\<f(x)\>\"", ",", "\"\<N=4 Taylor series\>\""}], "}"}]}]}], 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.792406607265315*^9, 3.792406612373487*^9}, {
-   3.792406655337008*^9, 3.7924066554108343`*^9}, {3.79240668671472*^9, 
-   3.7924066868040533`*^9}, 3.7924179200259533`*^9, {3.792420469386416*^9, 
-   3.792420470770809*^9}},
- CellLabel->"In[61]:=",ExpressionUUID->"2540cf16-c73d-412f-aaa5-c478633503bb"],
-
-Cell[BoxData[
- RowBox[{"padeApproximant2", " ", "=", 
-  RowBox[{"Normal", "[", 
-   RowBox[{"PadeApproximant", "[", 
-    RowBox[{
-     RowBox[{"f", "[", "x", "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792420506852339*^9, 3.792420541029134*^9}, 
-   3.792420695496935*^9, 3.792438972502736*^9},
- CellLabel->"In[62]:=",ExpressionUUID->"81464b11-3b3b-4277-9886-8ae1eaae2380"],
-
-Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "taylorSeries", "}"}], ",", 
-    RowBox[{"{", "padeApproximant2", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.79242055048558*^9, 3.79242055384737*^9}, 
-   3.792420699287925*^9},
- CellLabel->"In[63]:=",ExpressionUUID->"be76ef56-868e-469a-b1e3-a7f91b3f9240"],
-
-Cell[BoxData[
- RowBox[{"taylorComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", 
-      RowBox[{
-       RowBox[{"-", "1"}], "/", "2"}], ",", "2"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{
-      "\"\<f(x)\>\"", ",", "\"\<N=4 Taylor series\>\"", ",", 
-       "\"\<2,2 Pade approximant\>\""}], "}"}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792420573070053*^9, 3.792420608262721*^9}, {
-  3.792439025023896*^9, 3.7924390314139833`*^9}},
- CellLabel->"In[64]:=",ExpressionUUID->"078c29c6-9c0b-4a53-8a11-99c1dcb2b009"],
-
-Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "padeApproximant2", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{3.7924390675414553`*^9},
- CellLabel->"In[65]:=",ExpressionUUID->"dfdd2423-9495-468a-8445-cff97c6b6b0f"],
-
-Cell[BoxData[
- RowBox[{"taylorComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", 
-      RowBox[{
-       RowBox[{"-", "1"}], "/", "2"}], ",", "10"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{"\"\<f(x)\>\"", ",", "\"\<2,2 Pade approximant\>\""}], 
-      "}"}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792439071234617*^9, 3.792439073175809*^9}},
- CellLabel->"In[66]:=",ExpressionUUID->"55c40f82-ed1f-4225-ac92-71d44273b9f2"],
+   3.792417799700562*^9}, {3.919244745651129*^9, 
+   3.919244746328103*^9}},ExpressionUUID->"5ce8816c-1af8-407e-a5e6-\
+f920295318b3"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"padeApproximant4", " ", "=", 
+  RowBox[{"SeriesTable", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"a", "[", "n", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "0", ",", "20"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792407858760491*^9, 3.792407869938596*^9}, {
+  3.919244747561791*^9, 
+  3.9192447482828617`*^9}},ExpressionUUID->"9f10492c-bc44-48ab-aaee-\
+f3c8ddf73748"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RatioTable", "=", 
+   RowBox[{"N", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Abs", "[", 
+       RowBox[{
+        RowBox[{"a", "[", "n", "]"}], "/", 
+        RowBox[{"a", "[", 
+         RowBox[{"n", "+", "1"}], "]"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "0", ",", "99"}], "}"}]}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792417665796492*^9, 3.792417685824278*^9}, {
+  3.7924177415879393`*^9, 3.79241774416816*^9}, {3.792417821664628*^9, 
+  3.792417821755336*^9}, {3.919244749816862*^9, 
+  3.919244750495309*^9}},ExpressionUUID->"8bd99e6b-d536-420c-803c-\
+5dbfbd356120"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RatioTable", "=", 
+   RowBox[{"N", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"Abs", "[", 
+        RowBox[{"1", "/", 
+         RowBox[{"a", "[", "n", "]"}]}], "]"}], 
+       RowBox[{"1", "/", "n"}]], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "1", ",", "100"}], "}"}]}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792417708895515*^9, 3.7924177513765917`*^9}, {
+  3.792417812570382*^9, 3.7924178128232203`*^9}, {3.919244751562092*^9, 
+  3.919244752240354*^9}},ExpressionUUID->"ba34a775-27f3-4f0e-afd6-\
+0cbf965fe7db"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "taylorSeries", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792417902195917*^9, 3.792417902205304*^9}, {
+  3.919244753360777*^9, 
+  3.919244753989479*^9}},ExpressionUUID->"ce233839-d708-4c8e-b935-\
+cbfa92ad74f7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"taylorComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<f(x)\>\"", ",", "\"\<N=4 Taylor series\>\""}], "}"}]}]}], 
+    "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792406607265315*^9, 3.792406612373487*^9}, {
+   3.792406655337008*^9, 3.7924066554108343`*^9}, {3.79240668671472*^9, 
+   3.7924066868040533`*^9}, 3.7924179200259533`*^9, {3.792420469386416*^9, 
+   3.792420470770809*^9}, {3.919244785553946*^9, 
+   3.919244786247932*^9}},ExpressionUUID->"2540cf16-c73d-412f-aaa5-\
+c478633503bb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"padeApproximant2", " ", "=", 
    RowBox[{"Normal", "[", 
     RowBox[{"PadeApproximant", "[", 
      RowBox[{
       RowBox[{"f", "[", "x", "]"}], ",", 
       RowBox[{"{", 
-       RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], 
-  ";"}]], "Input",
- CellChangeTimes->{{3.7924206884168*^9, 3.792420693217894*^9}},
- CellLabel->"In[67]:=",ExpressionUUID->"64f9ec6b-6a40-4998-b45f-18c56f615c5a"],
+       RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792420506852339*^9, 3.792420541029134*^9}, 
+   3.792420695496935*^9, 3.792438972502736*^9, {3.919244781561153*^9, 
+   3.919244782210744*^9}},ExpressionUUID->"81464b11-3b3b-4277-9886-\
+8ae1eaae2380"],
 
 Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "padeApproximant2", "}"}], ",", 
-    RowBox[{"{", "padeApproximant4", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792420709890576*^9, 3.7924207126475487`*^9}},
- CellLabel->"In[68]:=",ExpressionUUID->"c5c874c2-9f3c-4216-8526-e50552917c20"],
-
-Cell[BoxData[
- RowBox[{"taylorComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", 
-      RowBox[{
-       RowBox[{"-", "1"}], "/", "2"}], ",", "100"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
      RowBox[{"{", 
+      RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "taylorSeries", "}"}], ",", 
+     RowBox[{"{", "padeApproximant2", "}"}]}], "]"}]}], "\[IndentingNewLine]",
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.79242055048558*^9, 3.79242055384737*^9}, 
+   3.792420699287925*^9, {3.9192447834703827`*^9, 
+   3.919244784147744*^9}},ExpressionUUID->"be76ef56-868e-469a-b1e3-\
+a7f91b3f9240"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"taylorComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<f(x)\>\"", ",", "\"\<N=4 Taylor series\>\"", ",", 
+        "\"\<2,2 Pade approximant\>\""}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792420573070053*^9, 3.792420608262721*^9}, {
+  3.792439025023896*^9, 3.7924390314139833`*^9}, {3.919244788333507*^9, 
+  3.919244788943915*^9}},ExpressionUUID->"078c29c6-9c0b-4a53-8a11-\
+99c1dcb2b009"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "padeApproximant2", "}"}]}], "]"}]}], "\[IndentingNewLine]",
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{
+  3.7924390675414553`*^9, {3.919244796202097*^9, 
+   3.9192447968996897`*^9}},ExpressionUUID->"dfdd2423-9495-468a-8445-\
+cff97c6b6b0f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"taylorComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<f(x)\>\"", ",", "\"\<2,2 Pade approximant\>\""}], 
+       "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792439071234617*^9, 3.792439073175809*^9}, {
+  3.919244798495305*^9, 
+  3.919244799181326*^9}},ExpressionUUID->"55c40f82-ed1f-4225-ac92-\
+71d44273b9f2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"padeApproximant4", " ", "=", 
+    RowBox[{"Normal", "[", 
+     RowBox[{"PadeApproximant", "[", 
       RowBox[{
-      "\"\<f(x)\>\"", ",", "\"\<2,2 Pade approximant\>\"", ",", 
-       "\"\<4,4 Pade approximant\>\""}], "}"}]}]}], "]"}]}]], "Input",
+       RowBox[{"f", "[", "x", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7924206884168*^9, 3.792420693217894*^9}, {
+  3.9192447942757053`*^9, 
+  3.9192447949504757`*^9}},ExpressionUUID->"64f9ec6b-6a40-4998-b45f-\
+18c56f615c5a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"f", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "padeApproximant2", "}"}], ",", 
+     RowBox[{"{", "padeApproximant4", "}"}]}], "]"}]}], "\[IndentingNewLine]",
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792420709890576*^9, 3.7924207126475487`*^9}, {
+  3.9192447927078114`*^9, 
+  3.919244793322487*^9}},ExpressionUUID->"c5c874c2-9f3c-4216-8526-\
+e50552917c20"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"taylorComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ",", "100"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<f(x)\>\"", ",", "\"\<2,2 Pade approximant\>\"", ",", 
+        "\"\<4,4 Pade approximant\>\""}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.792420737308127*^9, 3.7924207604288*^9}, {
-  3.792420889188238*^9, 3.792420889669497*^9}},
- CellLabel->"In[69]:=",ExpressionUUID->"9577fbc6-2838-4753-9f68-ea10115d4a81"],
+  3.792420889188238*^9, 3.792420889669497*^9}, {3.9192447910679493`*^9, 
+  3.9192447916910677`*^9}},ExpressionUUID->"9577fbc6-2838-4753-9f68-\
+ea10115d4a81"],
 
 Cell[BoxData[
- RowBox[{"gammaData", " ", "=", " ", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"1", ",", "1"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"2", ",", "1"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"3", ",", "2"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"4", ",", "6"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"5", ",", "24"}], "}"}]}], "}"}]}]], "Input",
- CellChangeTimes->{{3.792421315781616*^9, 3.7924213567348623`*^9}},
- CellLabel->"In[70]:=",ExpressionUUID->"0e12c922-4b90-4e52-b6c6-2f33a2b6df29"],
-
-Cell[BoxData[
- RowBox[{"polyInt", " ", "=", " ", 
-  RowBox[{"InterpolatingPolynomial", "[", 
-   RowBox[{"gammaData", ",", "x"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792421416407815*^9, 3.792421453706005*^9}},
- CellLabel->"In[71]:=",ExpressionUUID->"9ccd8fa1-0c37-4355-b4aa-53ea7719c3e2"],
-
-Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "polyInt", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792421476480031*^9, 3.792421501142318*^9}, {
-  3.792421541500228*^9, 3.79242154165602*^9}},
- CellLabel->"In[72]:=",ExpressionUUID->"3ee9d8bb-bbdd-4350-b143-1d6ae83338eb"],
-
-Cell[BoxData[
- RowBox[{"gammaComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0", ",", "6"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{"\"\<Gamma\>\"", ",", "\"\<Polynomial Interpolant\>\""}], 
-      "}"}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792421507456788*^9, 3.7924215304101133`*^9}},
- CellLabel->"In[73]:=",ExpressionUUID->"852e56e1-4dfe-4c53-9fc9-d6936048dddf"],
-
-Cell[BoxData[
- RowBox[{"loggammaData", " ", "=", " ", 
-  RowBox[{"N", "[", 
+ RowBox[{
+  RowBox[{"gammaData", " ", "=", " ", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"1", ",", 
-       RowBox[{"Log", "[", "1", "]"}]}], "}"}], ",", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"2", ",", 
-       RowBox[{"Log", "[", "1", "]"}]}], "}"}], ",", 
+      RowBox[{"2", ",", "1"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"3", ",", 
-       RowBox[{"Log", "[", "2", "]"}]}], "}"}], ",", 
+      RowBox[{"3", ",", "2"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"4", ",", 
-       RowBox[{"Log", "[", "6", "]"}]}], "}"}], ",", 
+      RowBox[{"4", ",", "6"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"5", ",", 
-       RowBox[{"Log", "[", "24", "]"}]}], "}"}]}], "}"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792421600108418*^9, 3.792421658762681*^9}},
- CellLabel->"In[74]:=",ExpressionUUID->"d4265ac4-2327-4092-a604-ebf06c6c1473"],
+      RowBox[{"5", ",", "24"}], "}"}]}], "}"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792421315781616*^9, 3.7924213567348623`*^9}, {
+  3.9192448018890743`*^9, 
+  3.9192448025960217`*^9}},ExpressionUUID->"0e12c922-4b90-4e52-b6c6-\
+2f33a2b6df29"],
 
 Cell[BoxData[
- RowBox[{"logpolyInt", " ", "=", " ", 
-  RowBox[{"InterpolatingPolynomial", "[", 
-   RowBox[{"loggammaData", ",", "x"}], "]"}]}]], "Input",
+ RowBox[{
+  RowBox[{"polyInt", " ", "=", " ", 
+   RowBox[{"InterpolatingPolynomial", "[", 
+    RowBox[{"gammaData", ",", "x"}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792421416407815*^9, 3.792421453706005*^9}, {
+  3.919244776324277*^9, 
+  3.9192447769875937`*^9}},ExpressionUUID->"9ccd8fa1-0c37-4355-b4aa-\
+53ea7719c3e2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "polyInt", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792421476480031*^9, 3.792421501142318*^9}, {
+  3.792421541500228*^9, 3.79242154165602*^9}, {3.9192447793877687`*^9, 
+  3.919244780015318*^9}},ExpressionUUID->"3ee9d8bb-bbdd-4350-b143-\
+1d6ae83338eb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gammaComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "6"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Gamma\>\"", ",", "\"\<Polynomial Interpolant\>\""}], 
+       "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792421507456788*^9, 3.7924215304101133`*^9}, {
+  3.919244774547112*^9, 
+  3.919244775151841*^9}},ExpressionUUID->"852e56e1-4dfe-4c53-9fc9-\
+d6936048dddf"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"loggammaData", " ", "=", " ", 
+   RowBox[{"N", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"Log", "[", "1", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", 
+        RowBox[{"Log", "[", "1", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", 
+        RowBox[{"Log", "[", "2", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4", ",", 
+        RowBox[{"Log", "[", "6", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", 
+        RowBox[{"Log", "[", "24", "]"}]}], "}"}]}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792421600108418*^9, 3.792421658762681*^9}, {
+  3.91924477250222*^9, 
+  3.91924477316219*^9}},ExpressionUUID->"d4265ac4-2327-4092-a604-\
+ebf06c6c1473"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"logpolyInt", " ", "=", " ", 
+   RowBox[{"InterpolatingPolynomial", "[", 
+    RowBox[{"loggammaData", ",", "x"}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.7924215879365788`*^9, 3.792421592178835*^9}, {
-  3.792421648936739*^9, 3.792421649226684*^9}},
- CellLabel->"In[75]:=",ExpressionUUID->"e67347e3-1071-4c0d-b3cc-6fbd3fa13b6f"],
+  3.792421648936739*^9, 3.792421649226684*^9}, {3.919244763171837*^9, 
+  3.91924476999352*^9}},ExpressionUUID->"e67347e3-1071-4c0d-b3cc-\
+6fbd3fa13b6f"],
 
 Cell[BoxData[
- RowBox[{"logpolyInt", "[", "2", "]"}]], "Input",
- CellChangeTimes->{{3.792421726742038*^9, 3.7924217290467663`*^9}},
- CellLabel->"In[76]:=",ExpressionUUID->"fa433f80-6cec-403a-8405-99f60bedabdd"],
+ RowBox[{
+  RowBox[{"logpolyInt", "[", "2", "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792421726742038*^9, 3.7924217290467663`*^9}, {
+  3.919244760999565*^9, 
+  3.919244761656322*^9}},ExpressionUUID->"fa433f80-6cec-403a-8405-\
+99f60bedabdd"],
 
 Cell[BoxData[{
- RowBox[{"polyInt2", " ", ":=", " ", 
-  RowBox[{
-  "Exp", "[", "logpolyInt", 
-   "]"}]}], "\[IndentingNewLine]", "polyInt2"}], "Input",
+ RowBox[{
+  RowBox[{"polyInt2", " ", ":=", " ", 
+   RowBox[{"Exp", "[", "logpolyInt", "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"polyInt2", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.792421682864544*^9, 3.792421720510099*^9}, {
   3.7924217883939447`*^9, 3.79242189495216*^9}, {3.792422000136447*^9, 
   3.79242201407181*^9}, {3.792422460233293*^9, 3.79242246407827*^9}, {
   3.792422541580874*^9, 3.792422544126939*^9}, {3.792439256494363*^9, 
-  3.792439259520506*^9}},
- CellLabel->"In[77]:=",ExpressionUUID->"c7299f9f-91a6-4ea5-8a81-80c71c4970d0"],
+  3.792439259520506*^9}, {3.919244758318054*^9, 
+  3.919244765905116*^9}},ExpressionUUID->"c7299f9f-91a6-4ea5-8a81-\
+80c71c4970d0"],
 
 Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "polyInt", "}"}], ",", 
-    RowBox[{"{", "polyInt2", "}"}]}], "]"}]}]], "Input",
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "polyInt", "}"}], ",", 
+     RowBox[{"{", "polyInt2", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{
   3.792421669257792*^9, {3.792421900689889*^9, 3.7924219098816853`*^9}, {
    3.792421978956983*^9, 3.792421979196473*^9}, {3.7924225250599747`*^9, 
-   3.7924225351554117`*^9}},
- CellLabel->"In[79]:=",ExpressionUUID->"35ff199d-91a9-4118-8e76-34d78bd807c6"],
+   3.7924225351554117`*^9}, {3.91924475662743*^9, 
+   3.919244757288906*^9}},ExpressionUUID->"35ff199d-91a9-4118-8e76-\
+34d78bd807c6"],
 
 Cell[BoxData[
- RowBox[{"gammaComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
+ RowBox[{
+  RowBox[{"gammaComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{
-      "\"\<Gamma\>\"", ",", "\"\<Polynomial Interpolant\>\"", ",", 
-       "\"\<log Poly Interpolant\>\""}], "}"}]}]}], "]"}]}]], "Input",
+      RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Gamma\>\"", ",", "\"\<Polynomial Interpolant\>\"", ",", 
+        "\"\<log Poly Interpolant\>\""}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.792421938484803*^9, 3.7924219695968027`*^9}, {
   3.792422617911706*^9, 3.792422621348844*^9}, {3.792423422959313*^9, 
-  3.792423423319706*^9}},
- CellLabel->"In[80]:=",ExpressionUUID->"d65e5899-da70-4c21-b538-0c2d022908c5"],
+  3.792423423319706*^9}, {3.919244821615665*^9, 
+  3.919244822336012*^9}},ExpressionUUID->"d65e5899-da70-4c21-b538-\
+0c2d022908c5"],
 
 Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Abs", "[", 
-      RowBox[{"polyInt", "-", 
-       RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"Abs", "[", 
-      RowBox[{"polyInt2", "-", 
-       RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.7924226466817207`*^9, 3.792422663010027*^9}},
- CellLabel->"In[81]:=",ExpressionUUID->"b9346a0f-076c-4c95-958f-bb0a389c31af"],
-
-Cell[BoxData[
- RowBox[{"gammaComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
      RowBox[{"{", 
-      RowBox[{
-      "\"\<Polynomial Interpolant\>\"", ",", "\"\<log Poly Interpolant\>\""}],
-       "}"}]}]}], "]"}]}]], "Input",
+      RowBox[{"Abs", "[", 
+       RowBox[{"polyInt", "-", 
+        RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Abs", "[", 
+       RowBox[{"polyInt2", "-", 
+        RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7924226466817207`*^9, 3.792422663010027*^9}, {
+  3.919244823914755*^9, 
+  3.919244824874737*^9}},ExpressionUUID->"b9346a0f-076c-4c95-958f-\
+bb0a389c31af"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gammaComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Polynomial Interpolant\>\"", ",", 
+        "\"\<log Poly Interpolant\>\""}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.7924226748275833`*^9, 3.792422674951625*^9}, {
-  3.792444952648077*^9, 3.792444953659772*^9}},
- CellLabel->"In[82]:=",ExpressionUUID->"358d781e-98c6-47f7-8cce-55abec377355"],
+  3.792444952648077*^9, 3.792444953659772*^9}, {3.919244829167954*^9, 
+  3.919244829897317*^9}},ExpressionUUID->"358d781e-98c6-47f7-8cce-\
+55abec377355"],
 
 Cell[BoxData[
  RowBox[{"<<", "FunctionApproximations`"}]], "Input",
@@ -468,141 +614,188 @@ Cell[BoxData[
  CellLabel->"In[83]:=",ExpressionUUID->"5a3a2d5d-5b16-4602-9820-52dc9b902d27"],
 
 Cell[BoxData[
- RowBox[{"padeInt", " ", "=", " ", 
-  RowBox[{"RationalInterpolation", "[", 
-   RowBox[{"polyInt", ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "2", ",", "2"}], "}"}], ",", 
-    RowBox[{"Range", "[", 
-     RowBox[{"1", ",", "5"}], "]"}]}], "]"}]}]], "Input",
+ RowBox[{
+  RowBox[{"padeInt", " ", "=", " ", 
+   RowBox[{"RationalInterpolation", "[", 
+    RowBox[{"polyInt", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "2", ",", "2"}], "}"}], ",", 
+     RowBox[{"Range", "[", 
+      RowBox[{"1", ",", "5"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.79242274059203*^9, 3.792422754744252*^9}, {
   3.792422804008532*^9, 3.792422827068449*^9}, {3.792423055736075*^9, 
-  3.792423078412352*^9}, {3.792423258318605*^9, 3.7924232633100433`*^9}},
- CellLabel->"In[84]:=",ExpressionUUID->"e6661882-0f9d-475f-b58b-668c043901ab"],
+  3.792423078412352*^9}, {3.792423258318605*^9, 3.7924232633100433`*^9}, {
+  3.919244831285192*^9, 
+  3.91924483199804*^9}},ExpressionUUID->"e6661882-0f9d-475f-b58b-\
+668c043901ab"],
 
 Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "polyInt", "}"}], ",", 
-    RowBox[{"{", "padeInt", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.7924233124479733`*^9, 3.792423313206423*^9}},
- CellLabel->"In[85]:=",ExpressionUUID->"4923b9f7-e924-4316-801e-7d9b804d1727"],
-
-Cell[BoxData[
- RowBox[{"gammaComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
      RowBox[{"{", 
-      RowBox[{
-      "\"\<Gamma\>\"", ",", "\"\<Polynomial Interpolant\>\"", ",", 
-       "\"\<Pade Interpolant\>\""}], "}"}]}]}], "]"}]}]], "Input",
+      RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "polyInt", "}"}], ",", 
+     RowBox[{"{", "padeInt", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7924233124479733`*^9, 3.792423313206423*^9}, {
+  3.919244834065919*^9, 
+  3.919244834727819*^9}},ExpressionUUID->"4923b9f7-e924-4316-801e-\
+7d9b804d1727"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gammaComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Gamma\>\"", ",", "\"\<Polynomial Interpolant\>\"", ",", 
+        "\"\<Pade Interpolant\>\""}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.792423317563685*^9, 3.792423317964325*^9}, {
-  3.792444988559902*^9, 
-  3.7924449890108423`*^9}},ExpressionUUID->"202f4b09-a9d6-44db-9ca8-\
+  3.792444988559902*^9, 3.7924449890108423`*^9}, {3.919244835946187*^9, 
+  3.919244837000602*^9}},ExpressionUUID->"202f4b09-a9d6-44db-9ca8-\
 106c7529b47e"],
 
 Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Abs", "[", 
-      RowBox[{"polyInt", "-", 
-       RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"Abs", "[", 
-      RowBox[{"padeInt", "-", 
-       RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792423335349168*^9, 3.792423336132242*^9}},
- CellLabel->"In[87]:=",ExpressionUUID->"f7d23356-0e51-42fd-b776-d63e611e7e8a"],
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Abs", "[", 
+       RowBox[{"polyInt", "-", 
+        RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Abs", "[", 
+       RowBox[{"padeInt", "-", 
+        RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792423335349168*^9, 3.792423336132242*^9}, {
+  3.9192448165859632`*^9, 
+  3.9192448172978067`*^9}},ExpressionUUID->"f7d23356-0e51-42fd-b776-\
+d63e611e7e8a"],
 
 Cell[BoxData[
- RowBox[{"gammaComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
+ RowBox[{
+  RowBox[{"gammaComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{
-      "\"\<Polynomial Interpolant\>\"", ",", "\"\<Pade Interpolant\>\""}], 
-      "}"}]}]}], "]"}]}]], "Input",
+      RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Polynomial Interpolant\>\"", ",", "\"\<Pade Interpolant\>\""}], 
+       "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.792423347750195*^9, 3.79242334815996*^9}, {
-  3.792444947343009*^9, 3.7924449478656683`*^9}},
- CellLabel->"In[88]:=",ExpressionUUID->"98f7ef47-bb35-4e12-bd7d-1e936a2fac84"],
+  3.792444947343009*^9, 3.7924449478656683`*^9}, {3.919244819074751*^9, 
+  3.9192448199945173`*^9}},ExpressionUUID->"98f7ef47-bb35-4e12-bd7d-\
+1e936a2fac84"],
 
 Cell[BoxData[
- RowBox[{"logpadeInt", " ", "=", " ", 
-  RowBox[{"RationalInterpolation", "[", 
-   RowBox[{"logpolyInt", ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "2", ",", "2"}], "}"}], ",", 
-    RowBox[{"Range", "[", 
-     RowBox[{"1", ",", "5"}], "]"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792423391029665*^9, 3.792423393163498*^9}},
- CellLabel->"In[89]:=",ExpressionUUID->"bb49fdde-e9ae-4506-8769-db158c0c6fff"],
-
-Cell[BoxData[
- RowBox[{"padeInt2", " ", ":=", " ", 
-  RowBox[{"Exp", "[", "logpadeInt", "]"}]}]], "Input",
- CellChangeTimes->{{3.792423407657671*^9, 3.792423409784328*^9}},
- CellLabel->"In[90]:=",ExpressionUUID->"770623f3-45bc-46b8-a263-d8a93462f3eb"],
-
-Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
-    RowBox[{"{", "polyInt2", "}"}], ",", 
-    RowBox[{"{", "padeInt2", "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.7924234457342978`*^9, 3.792423447370932*^9}},
- CellLabel->"In[91]:=",ExpressionUUID->"93085306-5d6b-4ba1-a565-7dc4345b14f7"],
-
-Cell[BoxData[
- RowBox[{"gammaComparisonPlot", "=", 
-  RowBox[{"Plot", "[", 
-   RowBox[{
-    RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
-    RowBox[{"AxesLabel", "\[Rule]", 
-     RowBox[{"{", "x", "}"}]}], ",", 
-    RowBox[{"PlotLegends", "\[Rule]", 
+ RowBox[{
+  RowBox[{"logpadeInt", " ", "=", " ", 
+   RowBox[{"RationalInterpolation", "[", 
+    RowBox[{"logpolyInt", ",", 
      RowBox[{"{", 
-      RowBox[{
-      "\"\<Gamma\>\"", ",", "\"\<log poly Interpolant\>\"", ",", 
-       "\"\<log Pade Interpolant\>\""}], "}"}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792423428453455*^9, 3.792423469609619*^9}, {
-  3.79242353496309*^9, 3.792423561200922*^9}},
- CellLabel->"In[92]:=",ExpressionUUID->"9fd4dadc-539c-455a-a083-2e239fcdb7a8"],
+      RowBox[{"x", ",", "2", ",", "2"}], "}"}], ",", 
+     RowBox[{"Range", "[", 
+      RowBox[{"1", ",", "5"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792423391029665*^9, 3.792423393163498*^9}, {
+  3.9192448148448067`*^9, 
+  3.919244815563202*^9}},ExpressionUUID->"bb49fdde-e9ae-4506-8769-\
+db158c0c6fff"],
 
 Cell[BoxData[
- RowBox[{"plotFunctions", "=", 
-  RowBox[{"Join", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"Abs", "[", 
-      RowBox[{"polyInt2", "-", 
-       RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"Abs", "[", 
-      RowBox[{"padeInt2", "-", 
-       RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.792423484300572*^9, 3.7924234875409193`*^9}},
- CellLabel->"In[93]:=",ExpressionUUID->"47c7cc95-cb59-4025-8543-fe8e11c88146"],
+ RowBox[{
+  RowBox[{"padeInt2", " ", ":=", " ", 
+   RowBox[{"Exp", "[", "logpadeInt", "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792423407657671*^9, 3.792423409784328*^9}, {
+  3.9192448120854607`*^9, 
+  3.919244813183605*^9}},ExpressionUUID->"770623f3-45bc-46b8-a263-\
+d8a93462f3eb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Gamma", "[", "x", "]"}], "}"}], ",", 
+     RowBox[{"{", "polyInt2", "}"}], ",", 
+     RowBox[{"{", "padeInt2", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7924234457342978`*^9, 3.792423447370932*^9}, {
+  3.919244809379835*^9, 
+  3.91924481003477*^9}},ExpressionUUID->"93085306-5d6b-4ba1-a565-\
+7dc4345b14f7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gammaComparisonPlot", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "plotFunctions", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.5", ",", "5.5"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", "x", "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Gamma\>\"", ",", "\"\<log poly Interpolant\>\"", ",", 
+        "\"\<log Pade Interpolant\>\""}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792423428453455*^9, 3.792423469609619*^9}, {
+  3.79242353496309*^9, 3.792423561200922*^9}, {3.9192448074514933`*^9, 
+  3.9192448081306057`*^9}},ExpressionUUID->"9fd4dadc-539c-455a-a083-\
+2e239fcdb7a8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"plotFunctions", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Abs", "[", 
+       RowBox[{"polyInt2", "-", 
+        RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Abs", "[", 
+       RowBox[{"padeInt2", "-", 
+        RowBox[{"Gamma", "[", "x", "]"}]}], "]"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.792423484300572*^9, 3.7924234875409193`*^9}, {
+  3.9192448057014313`*^9, 
+  3.9192448064178677`*^9}},ExpressionUUID->"47c7cc95-cb59-4025-8543-\
+fe8e11c88146"],
 
 Cell[BoxData[
  RowBox[{"gammaComparisonPlot", "=", 
@@ -622,9 +815,10 @@ Cell[BoxData[
  CellLabel->"In[94]:=",ExpressionUUID->"1a02d3f8-109b-4109-a309-7d3450c901eb"]
 },
 WindowSize->{1244, 855},
-WindowMargins->{{0, Automatic}, {Automatic, 180}},
-FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
-StyleDefinitions->"Default.nb"
+WindowMargins->{{Automatic, 91}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d4a7ca79-7bcd-417d-a8bd-cfe62be1cc54"
 ]
 (* End of Notebook Content *)
 
@@ -637,50 +831,50 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 395, 10, 33, "Input",ExpressionUUID->"6cf7a4b8-390a-4ece-8999-24e46f22f251"],
-Cell[956, 32, 352, 8, 30, "Input",ExpressionUUID->"f5217d2f-3f29-4d71-9e3c-48249746968f"],
-Cell[1311, 42, 490, 11, 30, "Input",ExpressionUUID->"6082b6f5-3b51-42b2-99ba-7ef2d0d88c9b"],
-Cell[1804, 55, 283, 7, 33, "Input",ExpressionUUID->"de1fed0e-0a8e-4497-bf50-2213fb1e5730"],
-Cell[2090, 64, 325, 8, 30, "Input",ExpressionUUID->"7acb9f32-6948-4756-b728-950a8b7af48e"],
-Cell[2418, 74, 596, 15, 30, "Input",ExpressionUUID->"b7b214cd-f18c-4b68-a2da-12125f7e48bc"],
-Cell[3017, 91, 654, 16, 30, "Input",ExpressionUUID->"5ce8816c-1af8-407e-a5e6-f920295318b3"],
-Cell[3674, 109, 352, 8, 30, "Input",ExpressionUUID->"9f10492c-bc44-48ab-aaee-f3c8ddf73748"],
-Cell[4029, 119, 607, 15, 30, "Input",ExpressionUUID->"8bd99e6b-d536-420c-803c-5dbfbd356120"],
-Cell[4639, 136, 557, 14, 33, "Input",ExpressionUUID->"ba34a775-27f3-4f0e-afd6-0cbf965fe7db"],
-Cell[5199, 152, 353, 8, 30, "Input",ExpressionUUID->"ce233839-d708-4c8e-b935-cbfa92ad74f7"],
-Cell[5555, 162, 823, 19, 30, "Input",ExpressionUUID->"2540cf16-c73d-412f-aaa5-c478633503bb"],
-Cell[6381, 183, 457, 10, 30, "Input",ExpressionUUID->"81464b11-3b3b-4277-9886-8ae1eaae2380"],
-Cell[6841, 195, 427, 10, 30, "Input",ExpressionUUID->"be76ef56-868e-469a-b1e3-a7f91b3f9240"],
-Cell[7271, 207, 745, 18, 52, "Input",ExpressionUUID->"078c29c6-9c0b-4a53-8a11-99c1dcb2b009"],
-Cell[8019, 227, 335, 8, 30, "Input",ExpressionUUID->"dfdd2423-9495-468a-8445-cff97c6b6b0f"],
-Cell[8357, 237, 653, 16, 30, "Input",ExpressionUUID->"55c40f82-ed1f-4225-ac92-71d44273b9f2"],
-Cell[9013, 255, 434, 11, 30, "Input",ExpressionUUID->"64f9ec6b-6a40-4998-b45f-18c56f615c5a"],
-Cell[9450, 268, 409, 9, 30, "Input",ExpressionUUID->"c5c874c2-9f3c-4216-8526-e50552917c20"],
-Cell[9862, 279, 746, 18, 52, "Input",ExpressionUUID->"9577fbc6-2838-4753-9f68-ea10115d4a81"],
-Cell[10611, 299, 547, 15, 30, "Input",ExpressionUUID->"0e12c922-4b90-4e52-b6c6-2f33a2b6df29"],
-Cell[11161, 316, 292, 5, 30, "Input",ExpressionUUID->"9ccd8fa1-0c37-4355-b4aa-53ea7719c3e2"],
-Cell[11456, 323, 400, 9, 30, "Input",ExpressionUUID->"3ee9d8bb-bbdd-4350-b143-1d6ae83338eb"],
-Cell[11859, 334, 606, 14, 30, "Input",ExpressionUUID->"852e56e1-4dfe-4c53-9fc9-d6936048dddf"],
-Cell[12468, 350, 763, 21, 30, "Input",ExpressionUUID->"d4265ac4-2327-4092-a604-ebf06c6c1473"],
-Cell[13234, 373, 349, 6, 30, "Input",ExpressionUUID->"e67347e3-1071-4c0d-b3cc-6fbd3fa13b6f"],
-Cell[13586, 381, 210, 3, 30, "Input",ExpressionUUID->"fa433f80-6cec-403a-8405-99f60bedabdd"],
-Cell[13799, 386, 536, 10, 52, "Input",ExpressionUUID->"c7299f9f-91a6-4ea5-8a81-80c71c4970d0"],
-Cell[14338, 398, 525, 12, 30, "Input",ExpressionUUID->"35ff199d-91a9-4118-8e76-34d78bd807c6"],
-Cell[14866, 412, 753, 17, 52, "Input",ExpressionUUID->"d65e5899-da70-4c21-b538-0c2d022908c5"],
-Cell[15622, 431, 520, 13, 30, "Input",ExpressionUUID->"b9346a0f-076c-4c95-958f-bb0a389c31af"],
-Cell[16145, 446, 681, 16, 30, "Input",ExpressionUUID->"358d781e-98c6-47f7-8cce-55abec377355"],
-Cell[16829, 464, 214, 3, 30, "Input",ExpressionUUID->"5a3a2d5d-5b16-4602-9820-52dc9b902d27"],
-Cell[17046, 469, 564, 11, 30, "Input",ExpressionUUID->"e6661882-0f9d-475f-b58b-668c043901ab"],
-Cell[17613, 482, 395, 9, 30, "Input",ExpressionUUID->"4923b9f7-e924-4316-801e-7d9b804d1727"],
-Cell[18011, 493, 681, 17, 52, "Input",ExpressionUUID->"202f4b09-a9d6-44db-9ca8-106c7529b47e"],
-Cell[18695, 512, 517, 13, 30, "Input",ExpressionUUID->"f7d23356-0e51-42fd-b776-d63e611e7e8a"],
-Cell[19215, 527, 676, 16, 30, "Input",ExpressionUUID->"98f7ef47-bb35-4e12-bd7d-1e936a2fac84"],
-Cell[19894, 545, 425, 9, 30, "Input",ExpressionUUID->"bb49fdde-e9ae-4506-8769-db158c0c6fff"],
-Cell[20322, 556, 251, 4, 30, "Input",ExpressionUUID->"770623f3-45bc-46b8-a263-d8a93462f3eb"],
-Cell[20576, 562, 397, 9, 30, "Input",ExpressionUUID->"93085306-5d6b-4ba1-a565-7dc4345b14f7"],
-Cell[20976, 573, 699, 16, 52, "Input",ExpressionUUID->"9fd4dadc-539c-455a-a083-2e239fcdb7a8"],
-Cell[21678, 591, 521, 13, 30, "Input",ExpressionUUID->"47c7cc95-cb59-4025-8543-fe8e11c88146"],
-Cell[22202, 606, 604, 15, 30, "Input",ExpressionUUID->"1a02d3f8-109b-4109-a309-7d3450c901eb"]
+Cell[558, 20, 562, 14, 138, "Input",ExpressionUUID->"6cf7a4b8-390a-4ece-8999-24e46f22f251"],
+Cell[1123, 36, 521, 13, 136, "Input",ExpressionUUID->"f5217d2f-3f29-4d71-9e3c-48249746968f"],
+Cell[1647, 51, 662, 16, 136, "Input",ExpressionUUID->"6082b6f5-3b51-42b2-99ba-7ef2d0d88c9b"],
+Cell[2312, 69, 451, 12, 138, "Input",ExpressionUUID->"de1fed0e-0a8e-4497-bf50-2213fb1e5730"],
+Cell[2766, 83, 512, 13, 136, "Input",ExpressionUUID->"7acb9f32-6948-4756-b728-950a8b7af48e"],
+Cell[3281, 98, 773, 20, 136, "Input",ExpressionUUID->"b7b214cd-f18c-4b68-a2da-12125f7e48bc"],
+Cell[4057, 120, 826, 20, 136, "Input",ExpressionUUID->"5ce8816c-1af8-407e-a5e6-f920295318b3"],
+Cell[4886, 142, 523, 13, 136, "Input",ExpressionUUID->"9f10492c-bc44-48ab-aaee-f3c8ddf73748"],
+Cell[5412, 157, 778, 19, 136, "Input",ExpressionUUID->"8bd99e6b-d536-420c-803c-5dbfbd356120"],
+Cell[6193, 178, 728, 18, 138, "Input",ExpressionUUID->"ba34a775-27f3-4f0e-afd6-0cbf965fe7db"],
+Cell[6924, 198, 522, 13, 136, "Input",ExpressionUUID->"ce233839-d708-4c8e-b935-cbfa92ad74f7"],
+Cell[7449, 213, 998, 23, 136, "Input",ExpressionUUID->"2540cf16-c73d-412f-aaa5-c478633503bb"],
+Cell[8450, 238, 625, 14, 136, "Input",ExpressionUUID->"81464b11-3b3b-4277-9886-8ae1eaae2380"],
+Cell[9078, 254, 597, 14, 136, "Input",ExpressionUUID->"be76ef56-868e-469a-b1e3-a7f91b3f9240"],
+Cell[9678, 270, 920, 22, 157, "Input",ExpressionUUID->"078c29c6-9c0b-4a53-8a11-99c1dcb2b009"],
+Cell[10601, 294, 507, 13, 136, "Input",ExpressionUUID->"dfdd2423-9495-468a-8445-cff97c6b6b0f"],
+Cell[11111, 309, 830, 21, 136, "Input",ExpressionUUID->"55c40f82-ed1f-4225-ac92-71d44273b9f2"],
+Cell[11944, 332, 606, 15, 136, "Input",ExpressionUUID->"64f9ec6b-6a40-4998-b45f-18c56f615c5a"],
+Cell[12553, 349, 581, 14, 136, "Input",ExpressionUUID->"c5c874c2-9f3c-4216-8526-e50552917c20"],
+Cell[13137, 365, 925, 22, 157, "Input",ExpressionUUID->"9577fbc6-2838-4753-9f68-ea10115d4a81"],
+Cell[14065, 389, 727, 20, 136, "Input",ExpressionUUID->"0e12c922-4b90-4e52-b6c6-2f33a2b6df29"],
+Cell[14795, 411, 460, 10, 136, "Input",ExpressionUUID->"9ccd8fa1-0c37-4355-b4aa-53ea7719c3e2"],
+Cell[15258, 423, 568, 13, 136, "Input",ExpressionUUID->"3ee9d8bb-bbdd-4350-b143-1d6ae83338eb"],
+Cell[15829, 438, 781, 19, 136, "Input",ExpressionUUID->"852e56e1-4dfe-4c53-9fc9-d6936048dddf"],
+Cell[16613, 459, 943, 26, 136, "Input",ExpressionUUID->"d4265ac4-2327-4092-a604-ebf06c6c1473"],
+Cell[17559, 487, 511, 10, 136, "Input",ExpressionUUID->"e67347e3-1071-4c0d-b3cc-6fbd3fa13b6f"],
+Cell[18073, 499, 374, 8, 136, "Input",ExpressionUUID->"fa433f80-6cec-403a-8405-99f60bedabdd"],
+Cell[18450, 509, 824, 15, 262, "Input",ExpressionUUID->"c7299f9f-91a6-4ea5-8a81-80c71c4970d0"],
+Cell[19277, 526, 692, 16, 136, "Input",ExpressionUUID->"35ff199d-91a9-4118-8e76-34d78bd807c6"],
+Cell[19972, 544, 926, 21, 157, "Input",ExpressionUUID->"d65e5899-da70-4c21-b538-0c2d022908c5"],
+Cell[20901, 567, 720, 19, 157, "Input",ExpressionUUID->"b9346a0f-076c-4c95-958f-bb0a389c31af"],
+Cell[21624, 588, 855, 20, 136, "Input",ExpressionUUID->"358d781e-98c6-47f7-8cce-55abec377355"],
+Cell[22482, 610, 214, 3, 30, "Input",ExpressionUUID->"5a3a2d5d-5b16-4602-9820-52dc9b902d27"],
+Cell[22699, 615, 733, 16, 136, "Input",ExpressionUUID->"e6661882-0f9d-475f-b58b-668c043901ab"],
+Cell[23435, 633, 565, 14, 136, "Input",ExpressionUUID->"4923b9f7-e924-4316-801e-7d9b804d1727"],
+Cell[24003, 649, 899, 21, 178, "Input",ExpressionUUID->"202f4b09-a9d6-44db-9ca8-106c7529b47e"],
+Cell[24905, 672, 695, 18, 136, "Input",ExpressionUUID->"f7d23356-0e51-42fd-b776-d63e611e7e8a"],
+Cell[25603, 692, 874, 20, 157, "Input",ExpressionUUID->"98f7ef47-bb35-4e12-bd7d-1e936a2fac84"],
+Cell[26480, 714, 597, 14, 136, "Input",ExpressionUUID->"bb49fdde-e9ae-4506-8769-db158c0c6fff"],
+Cell[27080, 730, 441, 9, 157, "Input",ExpressionUUID->"770623f3-45bc-46b8-a263-d8a93462f3eb"],
+Cell[27524, 741, 566, 14, 136, "Input",ExpressionUUID->"93085306-5d6b-4ba1-a565-7dc4345b14f7"],
+Cell[28093, 757, 876, 20, 157, "Input",ExpressionUUID->"9fd4dadc-539c-455a-a083-2e239fcdb7a8"],
+Cell[28972, 779, 699, 18, 136, "Input",ExpressionUUID->"47c7cc95-cb59-4025-8543-fe8e11c88146"],
+Cell[29674, 799, 604, 15, 30, "Input",ExpressionUUID->"1a02d3f8-109b-4109-a309-7d3450c901eb"]
 }
 ]
 *)
