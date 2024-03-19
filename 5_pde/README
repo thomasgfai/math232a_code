@@ -1,0 +1,32 @@
+Brandeis Math 232a: Code Examples
+Unit 5: Numerical Partial Differential Equations
+==========================
+poisson.py - Solves the two-dimensional Poisson equation using a linear solve
+of a finite-difference discretization.
+
+m_of_lines.py - Demonstrates the method of lines for the linear advection
+equation, whereby the spatial grid is discretized but the system is
+time-integrated using a black-box ODE integration routine.
+
+transp.py - Solves the linear advection equation using a first-order scheme
+with an upwinded one-sided derivative.
+
+transp2.py - Solves the linear advection equation using a second-order 
+centered-difference scheme to calculate the spatial derivative. 
+This scheme is slightly unstable, which becomes apparent after many 
+timesteps have been performed.
+
+heat.py - Solves the heat equation on a periodic unit interval using an
+explicit finite difference scheme.
+
+c-n.py - Solves the heat equation using the Crank-Nicolson method, which is
+second-order in space and time, and unconditionally stable.
+
+telegraph.py - Solves the telegraph equation using the method of lines 
+and compares to the limiting exact solution of the heat equation
+
+fsolve.py - Demonstrates Python's "fsolve" routine for finding the nodes and
+weights in the two-point Gauss quadrature scheme.
+
+h_newton.py - Finds critical points of the Himmelblau function using the
+Newton method.
